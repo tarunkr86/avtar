@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+        "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+
+	<!-- Master -->
+	<definition name="master.page" template="/public/template/master.jsp">
+		<put-attribute name="header" value="/public/template/header.jsp" />
+		<put-attribute name="footer" value="/public/template/footer.jsp" />
+	</definition>
+
+	<!-- Pages -->
+	<definition name="welcomePage" extends="master.page">
+		<put-attribute name="body" value="/protected/welcomePage.jsp" />
+	</definition>
+	<definition name="contactsList" extends="master.page">
+		<put-attribute name="body" value="/protected/contacts/contacts.jsp" />
+	</definition>
+	<definition name="companyList" extends="master.page">
+		<put-attribute name="body" value="/protected/company/company.jsp" />
+	</definition>
+	<definition name="locationList" extends="master.page">
+		<put-attribute name="body" value="/protected/location/location.jsp" />
+	</definition>
+	<definition name="departmentList" extends="master.page">
+		<put-attribute name="body"
+			value="/protected/department/department.jsp" />
+	</definition>
+	<definition name="positionsList" extends="master.page">
+		<put-attribute name="body" value="/protected/position/position.jsp" />
+	</definition>
+	<definition name="emailCategorysList" extends="master.page">
+		<put-attribute name="body"
+			value="/protected/emailCategory/emailCategory.jsp" />
+	</definition>
+	<definition name="emailTemplatesList" extends="master.page">
+		<put-attribute name="body"
+			value="/protected/emailTemplate/emailTemplate.jsp" />
+	</definition>
+	<definition name="usersList" extends="master.page">
+		<put-attribute name="body" value="/protected/user/user.jsp" />
+	</definition>
+	<definition name="agencysList" extends="master.page">
+		<put-attribute name="body" value="/protected/agency/agency.jsp" />
+	</definition>
+	<definition name="jobTypesList" extends="master.page">
+		<put-attribute name="body" value="/protected/jobType/jobType.jsp" />
+	</definition>
+	<definition name="login" extends="master.page">
+		<put-attribute name="header" value="" />
+		<put-attribute name="footer" value="" />
+		<put-attribute name="body" value="/public/login.jsp" />
+	</definition>
+</tiles-definitions>
