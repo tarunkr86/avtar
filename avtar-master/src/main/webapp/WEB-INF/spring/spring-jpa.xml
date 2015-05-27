@@ -19,7 +19,6 @@
 		entity-manager-factory-ref="entityManagerFactory"
 		transaction-manager-ref="transactionManager" />
 
-
 	<!-- Generic -->
 	<context:annotation-config />
 	<tx:annotation-driven transaction-manager="transactionManager" />
