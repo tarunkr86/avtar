@@ -25,7 +25,6 @@
 	<tx:annotation-driven transaction-manager="transactionManager" />
 
 	<!-- JPA Replace with jndi -->
-
 	<bean
 		class="org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor" />
 	<tx:annotation-driven />
